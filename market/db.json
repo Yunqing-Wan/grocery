@@ -1,0 +1,10 @@
+{
+  "db":{
+    "loginDb":{
+      "admin": "admin"
+    },
+    "fruit":{
+      "apple": "http://..."
+    }
+  }
+}

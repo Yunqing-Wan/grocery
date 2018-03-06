@@ -1,0 +1,26 @@
+p{
+  background:pink;
+  margin: 0;
+}
+.login_box{
+  position: relative;
+  padding: 20px 0 0;
+}
+.cue{
+  background: yellowgreen;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute;
+  top: 15px;
+}
+span{
+  font-size: 12px;
+  cursor: pointer;
+}
+label{
+  font-size: 12px;
+}
+input[type="button"]{
+  cursor: pointer;
+}

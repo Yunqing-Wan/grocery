@@ -1,0 +1,32 @@
+<div>
+  <template>
+    <!-- 登录 -->
+    <div class="login_wrapper" v-show="showLogin">
+      <p>{{login}}</p>
+      <div class="login_box">
+        <span class="cue" v-show="ShowCue">{{cue}}</span>
+        <!-- <div> -->
+        <form class="loginIn">
+          <label>用户名：<input type="text" placeholder="请输入用户名" v-model="username"></label>
+          <label>密码：<input type="password" placeholder="请输入密码" v-model="pwd"></label>
+        </form>
+        <!-- </div> -->
+        <input type="button" value="sign in" @click="loginIn">
+        <span @click="ToRegister">没有账号？马上注册</span>
+      </div>
+    </div>
+    <!-- 注册 -->
+    <div class="register_wapper" v-show="showRegister">
+      <p>{{register}}</p>
+      <div class="login_box">
+        <span class="cue" v-show="ShowCue">{{cue}}</span>
+          <form class="signOn">
+            <label>用户名：<input type="text" name="newUsername" placeholder="请输入用户名" v-model="newUsername"></label>
+            <label>密码：<input type="password" name="newPwd" placeholder="请输入密码" v-model="newPwd"></label>
+          </form>
+          <input type="button" value="sign on" @click="registerIn">
+        <span @click="ToLogin">已有账号？马上登录</span>
+      </div>
+    </div>
+  </template>
+</div>
